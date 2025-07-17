@@ -1,0 +1,29 @@
+1. DDL Statements:
+a. Create a table named Students with columns studentID, name, age
+and course.
+b. Alter the Students table to add a PhoneNumber column.
+c. Drop the course column.
+2. DML Statements:
+a. Insert three records into the Students table.
+b. Update the Age of a student named &quot;Ali&quot; to 22.
+c. Delete all students from the Students table whose Age is less than 18.
+3. ER Diagram:
+a. Design an ER diagram for a university database with entities:
+Students, Courses, Instructors.
+b. Identify the relationships (1:M, M:N) between Students and Courses.
+4. Data Types:
+a. Create a Products table with appropriate data types for ProductID,
+Name, Price, and ManufactureDate.
+b. Explain the difference between VARCHAR and NVARCHAR. Give
+examples.
+5. Constraints:
+a. Create a Books table with a Price column that must be greater than 0.
+b. Add a unique constraint on the Email column of a Users table.
+c. Create a Students table with a primary key on StudentID and a foreign
+key referencing Courses(CourseID).
+
+6. Joins:
+a. Write a query to get student names along with their course names
+using INNER JOIN.
+b. Use FULL OUTER JOIN to list all courses and all students, even if
+they don’t match.
