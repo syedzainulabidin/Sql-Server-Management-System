@@ -1,0 +1,12 @@
+INSERT INTO Students (studentID, name, age, PhoneNumber)
+VALUES 
+    (1, 'Zain', 20, '0300-0000000'),
+    (2, 'Hamza', 22, '0311-1111111'),
+    (3, 'Farzan', 18, '0322-2222222');
+
+UPDATE Students
+SET age = 21
+WHERE name = 'Zain';
+
+DELETE FROM Students
+WHERE age < 21;

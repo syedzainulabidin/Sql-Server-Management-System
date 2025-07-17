@@ -1,0 +1,8 @@
+SELECT Student.Name, Course.CourseName
+FROM Students Student
+INNER JOIN Courses Course ON Student.CourseID = Course.CourseID;
+
+
+SELECT Student.Name, Course.CourseName
+FROM Students Student
+FULL OUTER JOIN Courses Course ON Student.CourseID = Course.CourseID;

@@ -1,0 +1,21 @@
+CREATE TABLE Books (
+    BookID INT PRIMARY KEY,
+    Title VARCHAR(100),
+    Price DECIMAL(10, 2) CHECK (Price > 0)
+);
+
+ALTER TABLE Users
+ADD CONSTRAINT UK_Email UNIQUE (Email);
+
+
+CREATE TABLE Courses (
+    CourseID INT PRIMARY KEY,
+    CourseName VARCHAR(50)
+);
+
+CREATE TABLE Students (
+    StudentID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    CourseID INT,
+    CONSTRAINT FK_Student_Course FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
+);

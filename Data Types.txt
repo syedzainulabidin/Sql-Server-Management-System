@@ -1,0 +1,18 @@
+CREATE TABLE Products (
+    ProductID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Price DECIMAL(10, 2),
+    ManufactureDate DATE
+);
+
+
+VARCHAR:Stores non-Unicode character data (ASCII).
+Uses 1 byte per character.
+Suitable for storing text in languages that use the Latin alphabet (e.g., English).
+Example: 'Hello' (5 bytes).
+
+NVARCHAR:Stores Unicode character data.
+Uses 2 bytes per character to support multilingual data (e.g., Arabic, Chinese).
+Suitable for applications requiring internationalization.
+Example: N'こんにちは' (Japanese for "Hello", 10 bytes).
+

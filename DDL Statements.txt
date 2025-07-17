@@ -1,0 +1,12 @@
+CREATE TABLE Students (
+    studentID INT PRIMARY KEY,
+    name VARCHAR(50),
+    age INT,
+    course VARCHAR(50)
+);
+
+ALTER TABLE Students
+ADD PhoneNumber VARCHAR(15);
+
+ALTER TABLE Students
+DROP COLUMN course;
